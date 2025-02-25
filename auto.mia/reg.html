@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="index.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Back</a>
+    </nav>
+<h2>Форма реєстрації</h2>
+
+<form action>
+    
+    <label for="fname">Ім'я:</label><br>
+    <input type="text" id="fname" name="fname" required><br><br>
+    
+    <label for="lname">Призвище:</label><br>
+    <input type="text" id="lname" name="lname" required><br><br>
+    
+    <!-- Поле для введення електронної пошти -->
+    <label for="email">Електронна пошта:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Поле для введення пароля -->
+    <label for="password">Пароль:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <!-- Поле для введення номера телефону -->
+    <label for="phone">Номер телефону:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="+380123456789" required><br><br>
+    
+    <!-- Поле для вибору дати -->
+    <label for="dob">Дата народження:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <!-- Поле для вибору кольору -->
+    <label for="color">Вибір кольору:</label><br>
+    <input type="color" id="color" name="color" value="#ff0000"><br><br>
+    
+    <!-- Радіокнопки -->
+    <label for="gender">Стать:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Чоловік</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Жінка</label><br><br>
+    
+    <!-- Прапорці -->
+    <label for="subscribe">Підписка на новини:</label><br>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Так, я хочу отримувати новини</label><br><br>
+    
+    <!-- Список -->
+    <label for="country">Країна:</label><br>
+    <select id="country" name="country" required>
+        <option value="ukraine">Україна</option>
+        <option value="usa">США</option>
+        <option value="canada">Канада</option>
+    </select><br><br>
+    
+    <!-- Поле для вибору файлу -->
+    <label for="file">Завантажити файл:</label><br>
+    <input type="file" id="file" name="file"><br><br>
+    
+    <!-- Кнопка для відправлення форми -->
+    <input type="submit" value="Відправити"><br><br>
+    
+    <!-- Кнопка для скидання форми -->
+    <input type="reset" value="Скинути">
+</form>
+</body>
+</html>
